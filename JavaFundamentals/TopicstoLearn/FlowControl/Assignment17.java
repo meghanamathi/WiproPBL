@@ -23,6 +23,6 @@ public class Assignment17 {
         else
             System.out.println(n+" is not a palindrome");
 
-        sc.close();
+       sc.close();
     }
 }

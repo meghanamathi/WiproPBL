@@ -27,6 +27,6 @@ public class Assignment15 {
             System.out.println();
         }
 
-        sc.close();
+       sc.close();
     }
 }
