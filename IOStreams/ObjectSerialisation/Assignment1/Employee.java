@@ -1,0 +1,91 @@
+package IOStreams.ObjectSerialisation.Assignment1;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Employee implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    private String name;
+    private Date dateOfBirth;
+    private String department;
+    private String designation;
+    private double salary;
+
+    // Default Constructor
+    public Employee() {
+
+    }
+
+    // Parameterized Constructor
+    public Employee(String name, Date dateOfBirth,
+                    String department,
+                    String designation,
+                    double salary) {
+
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.department = department;
+        this.designation = designation;
+        this.salary = salary;
+    }
+
+    // Getters
+
+    public String getName() {
+        return name;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    // Setters
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    // Display Method
+    public void display() {
+
+        System.out.println("Employee Details");
+        System.out.println("-------------------------");
+        System.out.println("Name          : " + name);
+        System.out.println("Date Of Birth : " + dateOfBirth);
+        System.out.println("Department    : " + department);
+        System.out.println("Designation   : " + designation);
+        System.out.println("Salary        : " + salary);
+
+    }
+
+}
